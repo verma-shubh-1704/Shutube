@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {font-family: "Lato", sans-serif;}
+        
+        .sidebar {
+          height: 100%;
+          width: 160px;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #f2f2f2;
+          overflow-x: hidden;
+          padding-top: 16px;
+        }
+        
+        .sidebar a {
+          padding: 6px 8px 6px 16px;
+          text-decoration: none;
+          font-size: 20px;
+          color: #818181;
+          display: block;
+        }
+
+        .main {
+          margin-left: 160px; /* Same as the width of the sidenav */
+          padding: 0px 10px;
+        }
+        
+        @media screen and (max-height: 450px) {
+          .sidebar {padding-top: 15px;}
+          .sidebar a {font-size: 18px;}
+        }
+        </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#"><i class="fa fa-fw fa-history"></i>History</a>
+        <a href="#"><i class="fa fa-fw fa-heart"></i>Favourites</a>
+        <a href="#"><i class="fa fa-fw fa-download"></i>Downloads</a>
+        <a href="#"><i class="far fa-clock"></i>Watched</a>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
